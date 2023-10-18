@@ -168,7 +168,6 @@ export default {
 }
 .wrapper{
   background: #fff;
-  /* background-color:#D9D9D9; */
 }
 button{
   border: none;

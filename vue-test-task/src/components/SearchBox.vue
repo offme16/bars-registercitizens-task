@@ -3,15 +3,15 @@
       <form class="search" @submit.prevent>
         <div>
           <h3>Фамилия</h3>
-          <input v-model="searchValue.surName" placeholder="Введите сюда...">
+          <input v-model="searchValue.surName" placeholder="Иванов">
         </div>
         <div>
           <h3>Имя</h3>
-          <input v-model="searchValue.name" placeholder="Введите Имя">
+          <input v-model="searchValue.name" placeholder="Иван">
         </div>
         <div>
           <h3>Отчество</h3>
-          <input v-model="searchValue.lastName" placeholder="Введите Отчество">
+          <input v-model="searchValue.lastName" placeholder="Иванович">
         </div>
         <div>
           <h3>Дата рождения с:</h3>
