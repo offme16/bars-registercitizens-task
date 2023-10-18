@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/10/2023 16:42:01" ReportInfo.Modified="10/10/2023 23:32:36" ReportInfo.CreatorVersion="2022.2.0.0">
+  <Styles Name="Blue">
+    <Style Name="Title" Font="Arial, 12pt, style=Bold"/>
+    <Style Name="Header" Fill.Color="LightSkyBlue" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Group" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Data" Font="Arial, 10pt"/>
+    <Style Name="Footer" Fill.Color="LightSkyBlue" Font="Arial, 10pt"/>
+    <Style Name="EvenRows" Fill.Color="AliceBlue" Font="Arial, 10pt"/>
+  </Styles>
+  <Dictionary>
+    <PostgresDataConnection Name="Connection" ConnectionString="rijcmlq8ZkN6qUj4G/zvKvLeJ9DDB6WCp22J48oQEWWvz8/J/MZDVLKFLpa6jepCevogn/QJUGwqrHhF/65zNSHprtjpqvHacKS9XrR5rI6xs6vlFI=">
+      <TableDataSource Name="public_People" DataType="System.Int32" Enabled="true" TableName="public.&quot;People&quot;">
+        <Column Name="Id" DataType="System.Int32"/>
+        <Column Name="Name" DataType="System.String"/>
+        <Column Name="SurName" DataType="System.String"/>
+        <Column Name="LastName" DataType="System.String"/>
+        <Column Name="BirthDate" DataType="System.DateTime"/>
+              </TableDataSource>
+    </PostgresDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Width="718.2" Height="37.8" Dock="Fill" Text="People register&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt, style=Bold" Style="Title"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Left="9.45" Width="151.2" Height="18.9" Fill.Color="LightSkyBlue" Text="Имя&#13;&#10;" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text5" Left="198.45" Width="141.75" Height="18.9" Fill.Color="LightSkyBlue" Text="Фамилия&#13;&#10;" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text7" Left="368.55" Width="141.75" Height="18.9" Fill.Color="LightSkyBlue" Text="Отчество" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text9" Left="548.1" Width="141.75" Height="18.9" Fill.Color="LightSkyBlue" Text="Дата рождения" Font="Arial, 10pt, style=Bold" Style="Header"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="18.9" EvenStyle="EvenRows" DataSource="public_People">
+      <TextObject Name="Text2" Left="9.45" Width="151.2" Height="18.9" Text="[public_People.Name]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text4" Left="198.45" Width="141.75" Height="18.9" Text="[public_People.SurName]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text6" Left="368.55" Width="141.75" Height="18.9" Text="[public_People.LastName]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text8" Left="548.1" Width="141.75" Height="18.9" Text="[public_People.BirthDate]" Font="Arial, 10pt" Style="Data"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="97.05" Width="718.2" Height="18.9">
+      <TextObject Name="Text12" Width="718.2" Height="18.9" Dock="Fill" Fill.Color="LightSkyBlue" Text="[PageN]" HorzAlign="Right" Font="Arial, 10pt" Style="Footer"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>
