@@ -8657,11 +8657,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\apiback\\WebAPITest1\\WebAPITest\\WebAPITest.csproj",
+      "projectUniqueName": "D:\\bars-registercitizens-task\\WebAPITest1\\WebAPITest\\WebAPITest.csproj",
       "projectName": "WebAPITest",
-      "projectPath": "D:\\apiback\\WebAPITest1\\WebAPITest\\WebAPITest.csproj",
+      "projectPath": "D:\\bars-registercitizens-task\\WebAPITest1\\WebAPITest\\WebAPITest.csproj",
       "packagesPath": "C:\\Users\\offme\\.nuget\\packages\\",
-      "outputPath": "D:\\apiback\\WebAPITest1\\WebAPITest\\obj\\",
+      "outputPath": "D:\\bars-registercitizens-task\\WebAPITest1\\WebAPITest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\offme\\AppData\\Roaming\\NuGet\\NuGet.Config",

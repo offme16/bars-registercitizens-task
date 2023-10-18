@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D+zMhtP66tjut3/jCdbk8ULXpmh/90k1XxzpK7AX3gn5fzMWNfojGL3gYyZdPYOdnKUbVBtEu9EpkZG6aGNrig==",
+  "dgSpecHash": "lU1aM9An9HyEixyzKczv++c1ni5LNyrXZ5fOT3ZniOmW2sRoXfN7JB27KFZb53DnN/BGlo/SjCl8miZHh4ED+A==",
   "success": true,
-  "projectFilePath": "D:\\apiback\\WebAPITest1\\WebAPITest\\WebAPITest.csproj",
+  "projectFilePath": "D:\\bars-registercitizens-task\\WebAPITest1\\WebAPITest\\WebAPITest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\offme\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
     "C:\\Users\\offme\\.nuget\\packages\\confluent.kafka\\2.2.0\\confluent.kafka.2.2.0.nupkg.sha512",
