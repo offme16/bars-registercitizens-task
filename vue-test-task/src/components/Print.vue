@@ -48,5 +48,8 @@ export default{
  }
 .margin-back{
     height: 920px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 </style>
