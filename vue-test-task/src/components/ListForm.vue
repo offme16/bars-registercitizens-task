@@ -52,12 +52,16 @@ import {mask} from "vue-the-mask"
   },
     methods: {
       createNewPost() {
-        this.$emit('createPost', this.list)
-          this.clearField();
+        if(this.checkInput()){
+            this.$emit('createPost', this.list)
+            this.clearField();
+            }
         },
       changeList(){
-          this.$emit('changePost', this.list)
-          this.clearField();
+          if(this.checkInput()){
+              this.$emit('changePost', this.list)
+              this.clearField();
+          }
         },
       async choiceMetode() {
         this.changeAct ? this.changeList() : this.createNewPost();
@@ -73,7 +77,15 @@ import {mask} from "vue-the-mask"
           lastName: '',
           birthDate: ''
         }
-      }
+      },
+        checkInput() {
+    return (
+        this.list.name !== "" &&
+        this.list.surName !== "" &&
+        this.list.lastName !== "" &&
+        this.list.birthDate !== ""
+    );
+}
     },
 }
 </script>
